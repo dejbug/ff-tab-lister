@@ -1,0 +1,21 @@
+{
+  "name": "tab-lister",
+  "title": "Tab Lister",
+  "id": "jid1-u3f745LDA1vkKQ",
+  "description": "Yet another (very simple) tab lister. A possible update to Binny's \"Url Lister\".",
+  "author": "Dejan Budimir",
+  "homepage": "https://github.com/dejbug/ff-tab-lister",
+  "license": "MPL 2.0",
+  "version": "1.0",
+  "icon": "./data/icon-32.png",
+  
+	"preferences": [
+		{
+			"name": "url_format",
+			"title": "Url Format",
+			"description": "Each line of the output will be formatted like this.",
+			"type": "string",
+			"value": "<a href=\\\"{URL}\\\">{TITLE}</a><br />"
+		}
+	]
+}
