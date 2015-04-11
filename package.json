@@ -6,16 +6,16 @@
   "author": "Dejan Budimir",
   "homepage": "https://github.com/dejbug/ff-tab-lister",
   "license": "MPL 2.0",
-  "version": "1.0",
+  "version": "1.1",
   "icon": "./data/icon-32.png",
   
 	"preferences": [
 		{
-			"name": "url_format",
-			"title": "Url Format",
-			"description": "Each line of the output will be formatted like this.",
+			"name": "tab_format",
+			"title": "Output Format",
+			"description": "Each tab will be output like this.",
 			"type": "string",
-			"value": "<a href=\\\"{URL}\\\">{TITLE}</a><br />"
+			"value": "<a href=\\\"{URL}\\\">{TITLE}</a><br />\\\\r\\\\n"
 		}
 	]
 }
