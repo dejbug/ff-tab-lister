@@ -1,13 +1,19 @@
 {
-  "name": "tab-lister",
   "title": "Tab Lister",
-  "id": "jid1-u3f745LDA1vkKQ",
+  "name": "tab-lister",
+  "version": "1.3.0",
   "description": "Yet another (very simple) tab lister. A possible update to Binny's \"Url Lister\".",
+  "main": "index.js",
   "author": "Dejan Budimir",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ],
   "homepage": "https://github.com/dejbug/ff-tab-lister",
-  "license": "MPL 2.0",
-  "version": "1.3",
-  "icon": "./data/icon-32.png",
+  "icon": "resource://@tab-lister/data/icon-32.png",
   
 	"preferences": [
 		{
@@ -15,21 +21,21 @@
 			"title": "Tab format",
 			"description": "Each tab will be written to the clipboard like this.",
 			"type": "string",
-			"value": "<a href=\\\"{URL}\\\">{TITLE}</a><br>\\\\r\\\\n"
+			"value": "<a href=\"{URL}\">{TITLE}</a><br />\\r\\n"
 		},
 		{
 			"name": "header_format",
-			"title": "Header format",
-			"description": "Will be written prior to the tab output.",
+			"title": "Header",
+			"description": "Will be written above the tab output.",
 			"type": "string",
-			"value": "<!doctype html><html><head><title></title></head><body>\\\\r\\\\n"
+			"value": ""
 		},
 		{
 			"name": "footer_format",
-			"title": "Footer format",
+			"title": "Footer",
 			"description": "Will be appended to the completed tab output.",
 			"type": "string",
-			"value": "</body></html>"
+			"value": ""
 		}
 	]
 }
