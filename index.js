@@ -25,7 +25,9 @@ function replace_backspace_escapes(text) {
 
 function replace_formatting_variables(text, tab) {
 
-	text = text.replace(/\{TITLE\}/, tab.title);
+	var title = tab.title.replace(/"/, "&quot;");
+
+	text = text.replace(/\{TITLE\}/, title);
 	text = text.replace(/\{URL\}/, tab.url);
 	text = text.replace(/\{INDEX\}/, tab.index);
 	return text;
