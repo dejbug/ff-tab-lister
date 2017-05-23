@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+    form {
+    	position: relative;
+    }
+    input {
+    	position: absolute;
+    	border: thin solid #777;
+    	left: 7em;
+    	width: 42em;
+    }
+    p {
+    	color: #777;
+    	margin-left: 1em;
+    }
+    </style>
+  </head>
+
+<body>
+  <form>
+      <label>Tab format</label>
+      <input type="text" id="tab_format">
+      <p>Each tab will be written to the clipboard like this.</p>
+
+      <label>Header</label>
+      <input type="text" id="header_format">
+      <p>Will be prepended to the completed tab output.</p>
+
+      <label>Footer</label>
+      <input type="text" id="footer_format">
+      <p>Will be appended to the completed tab output.</p>
+
+      <button type="submit">Save</button>
+  </form>
+  <script src="options.js"></script>
+</body>
+
+</html>
