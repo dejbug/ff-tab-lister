@@ -16,6 +16,8 @@
   "homepage": "https://github.com/dejbug/ff-tab-lister",
   "icon": "resource://@tab-lister/data/icon-32.png",
   
+  "permissions": {"private-browsing": true},
+  
 	"preferences": [
 		{
 			"name": "tab_format",
